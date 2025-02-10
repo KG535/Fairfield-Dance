@@ -3,77 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fairfield Dance</title>
+    <title>Story of an Elder Woman in Germany</title>
     <style>
-        html, body {
-            height: auto;
-            min-height: 100vh;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            background-color: #fffefc;
-            overflow-y: auto;
+        body {
+            background-color: #228B22; /* Fir-green background */
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
         }
-
-        .header {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-
-        .header img {
-            height: 75px; /* Increased size by 1.5x from 50px */
-            margin-right: 15px;
-        }
-
-        .header h1 {
-            font-family: sans-serif;
-            color: #939292;
-            margin: 0;
-        }
-
-        .styled-calendar-container {
-            width: 800px;
-            min-height: 600px;
-            height: auto;
-            max-height: none;
-            border: none;
-            overflow: visible;
-            margin-top: 100px; /* Pushes calendar down below the fixed header with extra 20px spacing */
+        a {
+            color: #FFD700; /* Gold link color for visibility */
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="header.png" alt="Fairfield Dance Logo">
-    </div>
-
-    <h1>Upcoming Dances</h1>
+    <h1>The Story of Frau Schneider</h1>
+    <p>In a quiet village nestled between the rolling hills of Bavaria, an elderly woman named Frau Schneider lived a simple yet meaningful life. She had seen the world change around her—surviving wars, rebuilding her town, and witnessing the rise of modern technology.</p>
     
-    <iframe src="https://embed.styledcalendar.com/#QhQukcysVDMpSytLUWIz" title="Styled Calendar" 
-        class="styled-calendar-container"></iframe>
-    <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+    <p>Every morning, she would walk to the village bakery, where the scent of freshly baked bread filled the air. She greeted the baker, Hans, who had known her since he was a child. She would buy a loaf of dark rye bread, just as she had done for decades.</p>
     
-    <script>
-        function adjustCalendarHeight() {
-            var iframe = document.querySelector(".styled-calendar-container");
-            if (iframe) {
-                iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
-            }
-        }
-
-        window.addEventListener("load", adjustCalendarHeight);
-        window.addEventListener("resize", adjustCalendarHeight);
-    </script>
+    <p>Her days were filled with tending to her small garden, where she grew herbs and vegetables. She found solace in her flowers, which reminded her of her late husband, who had always brought her a single red rose every Sunday.</p>
+    
+    <p>One evening, as she sat by her window, knitting a warm scarf for her granddaughter, she reflected on the beauty of her life—the love she had given and received, the hardships she had endured, and the simple joys that made every day worth living.</p>
+    
+    <p>Frau Schneider knew that time was precious, and she cherished every moment in her beloved homeland.</p>
+    
+    <p>For more about life in Germany, visit <a href="https://www.deutschland.de/en" target="_blank">this website</a>.</p>
 </body>
 </html>
